@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
-<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Invitación de Boda — Móvil</title>
   <style>
     :root{
@@ -157,12 +157,12 @@
 
       <!-- Música arriba -->
       <div class="music-bar">
-        <div class="cover-art"><img id="artImg" src="./index_files/photo-1517841905240-472988babdf9" alt="Carátula"></div>
+        <div class="cover-art"><img id="artImg" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=800&auto=format&fit=crop" alt="Carátula"></div>
         <div class="track">
           <div class="name" id="trackName">Perfect — Ed Sheeran</div>
           <div class="artist" id="trackArtist">Acústico</div>
-          <div class="progress"><div class="bar" id="progressBar" style="width: 0.278896%;"></div></div>
-          <div class="time-row"><div id="currentTime">0:00</div><div id="durationTime">5:11</div></div>
+          <div class="progress"><div class="bar" id="progressBar"></div></div>
+          <div class="time-row"><div id="currentTime">0:00</div><div id="durationTime">0:00</div></div>
         </div>
         <div class="controls"><button class="play-btn" id="playPause">▶</button></div>
       </div>
@@ -171,16 +171,16 @@
       <div class="countdown">
         <h3>Faltan</h3>
         <div class="timer" id="timer">
-          <div><span id="days">207</span><small>Días</small></div>
-          <div><span id="hours">10</span><small>Horas</small></div>
-          <div><span id="minutes">30</span><small>Min</small></div>
-          <div><span id="seconds">34</span><small>Seg</small></div>
+          <div><span id="days">0</span><small>Días</small></div>
+          <div><span id="hours">0</span><small>Horas</small></div>
+          <div><span id="minutes">0</span><small>Min</small></div>
+          <div><span id="seconds">0</span><small>Seg</small></div>
         </div>
       </div>
 
       <div class="actions">
-        <a id="whatsappBtn" class="btn primary" href="https://wa.me/5213312345678?text=%C2%A1Hola!%20Confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Mar%C3%ADa%20%26%20Luis." target="_blank">Confirmar asistencia</a>
-        <a id="mapBtn" class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Hacienda%20San%20Miguel%20Guadalajara" target="_blank">Ver mapa</a>
+        <a id="whatsappBtn" class="btn primary" href="#" target="_blank">Confirmar asistencia</a>
+        <a id="mapBtn" class="btn ghost" href="#" target="_blank">Ver mapa</a>
       </div>
 
       <div class="footer">Traje formal • RSVP antes del 20 de abril</div>
@@ -266,58 +266,5 @@
     document.getElementById("mapBtn").href =
       `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(CONFIG.mapsQuery)}`;
   </script>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
-
-
-<audio class="audio-output" style="display: none;"></audio><div id="volume-booster-visusalizer">
-                    <div class="sound">
-                        <div class="sound-icon"></div>
-                        <div class="sound-wave sound-wave_one"></div>
-                        <div class="sound-wave sound-wave_two"></div>
-                        <div class="sound-wave sound-wave_three"></div>
-                    </div>
-                    <div class="segments-box">
-                        <div data-range="1-20" class="segment"><span></span></div>
-                        <div data-range="21-40" class="segment"><span></span></div>
-                        <div data-range="41-60" class="segment"><span></span></div>
-                        <div data-range="61-80" class="segment"><span></span></div>
-                        <div data-range="81-100" class="segment"><span></span></div>
-                    </div>
-                </div></body></html>
+</body>
+</html>
